@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strand Matching Quiz - SHS Career Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">🎓 SHS Career Guide</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="quiz.html" class="active">Take Quiz</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container quiz-container">
+        <!-- Quiz Header -->
+        <section class="quiz-header">
+            <h1>Strand Matching Quiz</h1>
+            <p>Answer these 10 questions to discover your perfect SHS strand</p>
+        </section>
+
+        <!-- Progress Bar -->
+        <div class="progress-section">
+            <div class="progress-info">
+                <span id="currentQuestion">1</span> of <span id="totalQuestions">10</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+        </div>
+
+        <!-- Quiz Content -->
+        <form id="quizForm" class="quiz-form">
+            <!-- Questions will be inserted here by JavaScript -->
+            <div id="questionsContainer"></div>
+
+            <!-- Navigation Buttons -->
+            <div class="quiz-navigation">
+                <button type="button" id="prevBtn" class="btn btn-secondary" style="display: none;">
+                    ← Previous
+                </button>
+                <button type="button" id="nextBtn" class="btn btn-secondary">
+                    Next →
+                </button>
+                <button type="submit" id="submitBtn" class="btn btn-primary" style="display: none;">
+                    Submit Quiz
+                </button>
+            </div>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 SHS Career Guide. Created to help students find their perfect educational path.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
