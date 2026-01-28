@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Results - SHS Career Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">🎓 SHS Career Guide</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="quiz.html">Take Quiz</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container results-container">
+        <!-- Results Header -->
+        <section class="results-header">
+            <h1>Your Results</h1>
+            <p>Based on your answers, here's your recommended SHS strand</p>
+        </section>
+
+        <!-- Recommended Strand Card -->
+        <section class="recommended-strand">
+            <div class="strand-result-card">
+                <div class="strand-result-icon" id="strandIcon"></div>
+                <h2 id="strandName"></h2>
+                <p class="strand-full-name" id="strandFullName"></p>
+                
+                <div class="strand-score">
+                    <p>Match Score: <span id="matchScore"></span>%</p>
+                    <div class="score-bar">
+                        <div class="score-fill" id="scoreFill"></div>
+                    </div>
+                </div>
+
+                <div class="strand-description">
+                    <h3>What is this strand?</h3>
+                    <p id="strandDescription"></p>
+                </div>
+
+                <div class="strand-info">
+                    <div class="info-box">
+                        <h4>Why You're a Good Fit</h4>
+                        <p id="whyGoodFit"></p>
+                    </div>
+
+                    <div class="info-box">
+                        <h4>Key Subjects</h4>
+                        <ul id="keySubjects"></ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Career Paths Section -->
+        <section class="career-section">
+            <h3>Possible College Courses</h3>
+            <div class="career-list-grid" id="collegeCoursesContainer"></div>
+        </section>
+
+        <!-- Career Opportunities Section -->
+        <section class="career-section">
+            <h3>Career Opportunities</h3>
+            <div class="career-list-grid" id="careerOpportunitiesContainer"></div>
+        </section>
+
+        <!-- Alternative Strands Section -->
+        <section class="alternative-section">
+            <h3>Other Strands That Might Interest You</h3>
+            <div class="alternative-strands" id="alternativeStrandsContainer"></div>
+        </section>
+
+        <!-- Action Buttons -->
+        <section class="action-buttons">
+            <a href="quiz.html" class="btn btn-secondary">Retake Quiz</a>
+            <a href="index.html" class="btn btn-primary">Back to Home</a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 SHS Career Guide. Created to help students find their perfect educational path.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
